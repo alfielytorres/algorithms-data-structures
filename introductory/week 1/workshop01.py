@@ -2,31 +2,34 @@
 # Replace the '' in each line with one of [+, -, *, //, %, /, **]
 # to create a statement that evaluates to True. 
 # For example, (a) can be changed to:
-0 == (x + x) % x
+# 0 == (x + x) % x
 
 # We start by assigning values to variables x and y
 x = 3
 y = 5
 
 # a
-0 == (x '' x) '' x 
+a= 0 == (x + x) % x 
 # b
-4 == x '' (y '' x) '' y 
+b = 4 == x ** (y % x) -y 
 # c
-7.5 == (x '' y) '' (y '' x)
+c = 7.5 == (x*y) / (y - x)
+
+print("{} {} {}".format(a,b,c))
 
 # Task 2: Booleans
 # Replace the '' in each line with one of [==, !=, <=, >=, <, >]
 # to create a statement that evaluates to True.
 # For example, (a) can be changed to:
-10 <= 10
+# 10 <= 10
 
 #a
-10 '' 10
+a= 10 == 10
 #b
-10%4 '' 12//7
+b = 10%4 > 12//7
 #c
-3**2 '' 10-3
+c = 3**2 > 10-3
+print("{} {} {}".format(a,b,c))
 
 # Task 3: Temperature Conversion
 # Replace the '' with a numerical expression that converts the
@@ -35,7 +38,9 @@ y = 5
 # the implementation would be:
 # temp_c = temp_f + 3
 
-temp_c = ''
+temp_f = 3
+temp_c = (temp_f-32)*(5/9)
+print("{}°F -> {}°C".format(temp_f,temp_c))
 
 # Task 4: Name Factoids
 # Replace the '' with an expression that evaluates to a string with
@@ -47,15 +52,17 @@ temp_c = ''
 # NOTE: You must implement factoids so that it would work for any value
 #       assigned to name.
 
-name = 'Jane'
-factoids = ''
+name = 'Alfie'
+factoids = "{} has {} letters. It starts with {} and ends with {}.".format(name, len(name),name[0],name[-1])
+
+print(factoids)
 
 
 # Task 5: Coin Flip
 # THIS TASK IS ONLY FOR FIT1053 STUDENTS
 
 # Replace the '' with any necessary import statements
-''
+
 
 def flip(bias):
     return None
