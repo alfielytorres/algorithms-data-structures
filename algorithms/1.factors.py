@@ -2,7 +2,7 @@
 
 
 # is prime we check if the number is divisible by itself and 1
-def isPrime(number):
+def is_prime(number):
     # Check (1,7) or [2, 6]
     i = 2
     while i < number:
@@ -17,7 +17,7 @@ def factorize(number):
     factors = []
     divisor = 2
     while number > 1:
-        if isPrime(divisor) and number%divisor==0:
+        if is_prime(divisor) and number%divisor==0:
             factors.append(divisor)
             # we want to keep this divisor 
             # to check if we can divide it 

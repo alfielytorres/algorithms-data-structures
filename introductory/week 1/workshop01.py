@@ -53,6 +53,7 @@ print("{}°F -> {}°C".format(temp_f,temp_c))
 #       assigned to name.
 
 name = 'Alfie'
+
 factoids = "{} has {} letters. It starts with {} and ends with {}.".format(name, len(name),name[0],name[-1])
 
 print(factoids)
