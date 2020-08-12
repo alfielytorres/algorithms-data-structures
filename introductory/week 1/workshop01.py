@@ -63,7 +63,8 @@ print(factoids)
 # THIS TASK IS ONLY FOR FIT1053 STUDENTS
 
 # Replace the '' with any necessary import statements
-
+import random
 
 def flip(bias):
-    return None
+    chance = bias > random.random()
+    return 'Coin has bias of' + str(bias) + "value of heads" + str(chance)
