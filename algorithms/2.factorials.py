@@ -1,6 +1,9 @@
-# normal 
-
+# Non-recursive
 def factorial(x):
+    '''
+    Input: Any number
+    Output: Returns the sum of the numbers less than the number given
+    '''
     product = 1
     if x == 0:
         return product
@@ -13,9 +16,12 @@ def factorial(x):
 print(factorial(5))
 
 
-# recursively 
-
+# Recursive 
 def recursive_factorial(x):
+    '''
+    Input: Any number
+    Output: Returns the sum of the numbers less than the number given
+    '''
     product = 1
     # base case
     if x == 0:
